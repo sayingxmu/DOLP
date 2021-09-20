@@ -6,6 +6,7 @@ The owl file is the OEDO model in paper "Improving Ocean Data Services with Sema
 Note that, the model can be opened and edited with Protege.
 
 If you use the code, please cite the following paper:
+
 @article{ren2021improving,
   title={Improving Ocean Data Services with Semantics and Quick Index},
   author={Ren, Xiaoli and Ren, Kaijun and Xu, Zichen and Li, Xiaoyong and Zhou, Aolong and Song Junqiang and Deng, Kefeng},
