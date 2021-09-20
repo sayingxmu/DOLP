@@ -9,7 +9,7 @@ If you use the code, please cite the following paper:
 
 @article{ren2021improving,
   title={Improving Ocean Data Services with Semantics and Quick Index},
-  author={Ren, Xiaoli and Ren, Kaijun and Xu, Zichen and Li, Xiaoyong and Zhou, Aolong and Song Junqiang and Deng, Kefeng},
+  author={Ren, Xiaoli and Ren, Kaijun and Xu, Zichen and Li, Xiaoyong and Zhou, Aolong and Song, Junqiang and Deng, Kefeng},
   journal={Journal of Computer Science and Technology },
   volume={36},
   number={6},
