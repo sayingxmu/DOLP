@@ -30,6 +30,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#hasCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#hasCapability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#MeasurementCapability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#hasCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#hasCondition">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#MeasurementCapability"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#hasDataFormat -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#hasDataFormat">
@@ -103,6 +122,15 @@
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#hasDataset"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Dataset"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#PhysicalParameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#hasPerformance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#hasPerformance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#MeasurementCapability"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Performance"/>
     </owl:ObjectProperty>
     
 
@@ -204,6 +232,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#inCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#inCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#MeasurementCapability"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#SurvivalCondition"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#isCitedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#isCitedBy">
@@ -284,6 +321,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Accessibility">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Accuracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Accuracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Performance"/>
     </owl:Class>
     
 
@@ -411,6 +456,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#MeasurementCapability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#MeasurementCapability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Sensor"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Observation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Observation">
@@ -461,6 +514,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Sensor"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#PhysicalParameter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#PhysicalParameter">
@@ -475,6 +536,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Pressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Pressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#MeasurementCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Sensor"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#QualityControl -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#QualityControl">
@@ -483,10 +560,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Range -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Range">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Performance"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Reference -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Reference">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#SST -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#SST">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#MeasurementCapability"/>
     </owl:Class>
     
 
@@ -505,6 +598,14 @@
     <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#SeabedTerrain">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Observation"/>
         <rdfs:comment>海底地形</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Sensitivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Sensitivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Performance"/>
     </owl:Class>
     
 
@@ -535,6 +636,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#SpatialResolution">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#SurvivalCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#SurvivalCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Sensor"/>
     </owl:Class>
     
 
@@ -591,6 +700,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#ValidTime">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Wind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#Wind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/renxl/ontologies/2019/11/untitled-ontology-16#MeasurementCapability"/>
     </owl:Class>
 </rdf:RDF>
 
